@@ -1,0 +1,2 @@
+# Secret-Santa-Application-
+This small project was inspired by a group of friends who asked me to create an application that would assign each person a secret Santa. For those who are unaware of what secret Santa is, to put briefly, names are put into a hat. A person will then remove a piece of paper from the hat at random. They will then open that piece of paper in private.  Written on that piece of paper is someones. The person will then obligated to give the put they have been assigned to a gift. 

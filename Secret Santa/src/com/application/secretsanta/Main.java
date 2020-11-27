@@ -12,28 +12,28 @@ public class Main {
 		Person montel = new Person("Montel");
 		Person jacob = new Person ("Jacob");
 		
-		//creating list 
-		SecretSanta list = new SecretSanta();
+		//creating list object
+		SecretSanta secretSantaList = new SecretSanta();
 		
 		//adding person objects to list
-		list.addPersonToList(jacob);
-		list.addPersonToList(nelson);
-		list.addPersonToList(beatrice);
-		list.addPersonToList(montel);
-		list.addPersonToList(daniel);
+		secretSantaList.addPersonToList(jacob);
+		secretSantaList.addPersonToList(nelson);
+		secretSantaList.addPersonToList(beatrice);
+		secretSantaList.addPersonToList(montel);
+		secretSantaList.addPersonToList(daniel);
 		
-		//Creating list of original list and random list.
-		List<Person> originalList = new ArrayList<>(list.getPeopleForSecretSanta());
-		List<Person> randomList =  new ArrayList<>(list.getPeopleForSecretSanta());
+		//Creating two list. One original and one randomised
+		List<Person> originalList = new ArrayList<>(secretSantaList.getPeopleForSecretSanta());
+		List<Person> randomList =  new ArrayList<>(secretSantaList.getPeopleForSecretSanta());
 		
-		
+		//prints secret santa list
 		printSecretSantaList(originalList, randomList);
 	}
 	
 	/**
 	 * prints secret santa list
 	 * assigns each person a secret santa
-	 * uses two lists
+	 * uses two lists. Assigns people in random lists to people in original list
 	 * @param originalList
 	 * @param randomList
 	 */
